@@ -1,0 +1,149 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* чтобы футер всегда прижат к низу страницы */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка */
+.header {
+    background-color: #0e1621;
+    color: #fff;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    
+
+}
+
+.main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.main-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Секции */
+.section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* Команды */
+.team {
+    margin-bottom: 20px;
+}
+
+.team img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Подвал */
+.footer {
+    background-color: #0e1621;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Прижимаем футер внизу */
+}
+
+.avatar img {
+    border-radius: 30%; /* Делаем изображение круглым */
+    max-width: 600px; /* Примерная ширина изображения */
+}
+
+.section {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 0.7s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.section:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.section:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.section:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.section:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.section:nth-child(6) {
+    animation-delay: 1s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}

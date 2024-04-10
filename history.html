@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <style>
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .history-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .history-card {
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .history-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .history-card-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">The International</div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="faq.html">F.A.Q.</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="history" class="section">
+        <div class="container">
+            <h2>История турнира</h2>
+            <div class="history-content">
+                <div class="history-card">
+                    <img src="The_International_logo.png" alt="The International 1">
+                    <div class="history-card-content">
+                        <h3>The International 1</h3>
+                        <p>Первый турнир The International состоялся в 2011 году в Кельне, Германия. Он собрал 16
+                            команд и был признан одним из крупнейших событий в истории киберспорта.</p>
+                    </div>
+                </div>
+                <div class="history-card">
+                    <img src="images.png" alt="The International 2">
+                    <div class="history-card-content">
+                        <h3>The International 2</h3>
+                        <p>Второй турнир The International прошел в 2012 году в Сиэтле, США. Призовой фонд турнира
+                            составил более $1,6 миллиона, что в то время было рекордной суммой для киберспортивных
+                            соревнований.</p>
+                    </div>
+                </div>
+                <!-- Добавьте информацию о других турнирах -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Связаться с нами: example@email.com</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
